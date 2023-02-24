@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/6f3b9a22d5.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="src/styles.css" />
+    <title>WeatherApp</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="saint-paul">
+        <i class="fa-solid fa-sun sun-icon"></i>
+        <form id="search-form">
+          <label for="name">City: </label>
+          <input type="text" name="name" id="name" required />
+          <input type="submit" value="Search" />
+        </form>
+        <h1 class="location">Saint Paul, MN</h1>
+        <h2 class="temperature">25° F</h2>
+        <div class="row">
+          <div class="col-6">
+            <ul>
+              <li id="date"></li>
+              <li>Wind: <span id="wind">11 mph</span></li>
+              <li>Humidity: <span id="humidity">83%</span></li>
+              <li>Sunrise: <span id="sunrise">7:50am</span></li>
+              <li>Sunset: <span id="sunset">4:40pm</span></li>
+            </ul>
+          </div>
+          <div class="col-6">
+            <div class="card">
+              <img
+                src="http://clipart-library.com/img/1328297.jpg"
+                class="cloudy-image"
+                alt="cartoon clouds"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Today's Forecast:</h5>
+                <p class="card-text">
+                  Cloudy. Some mixed winter precipitation possible late. Low
+                  26F. Winds SSW at 5 to 10 mph.
+                </p>
+                <a href="#" class="btn btn-primary">Radar</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="src/script.js"></script>
+  </body>
+</html>
